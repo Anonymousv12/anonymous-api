@@ -40,7 +40,7 @@ function isAuth(req, res, next) {
     });
     
     ```
-2. Dodaj nową funkcję do server.lua
+2. Dodaj nową funkcję do server_l.lua
     ```
                 exports('getadm', function()
                     local players = {}
