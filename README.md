@@ -83,21 +83,20 @@ function isAuth(req, res, next) {
             console.log(data.data[0])
 
 
+--------------------------------------------------------------------------------------------------------------------------
 
-
-        const id = args[0]
-        const body = {playerId: id};
-        fetch('http:/127.0.0.1:3000/heal', {
-            method: 'POST',
-            headers: {
-                'authorization': `super haslo`,
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(body),
-
-        })
-         .then(response => response.json())
-         .then(data => console.log(`Wykonanie komendy **Heal** na graczu o id **${id}** przebiegło **${data.success}**`));
+            const id = args[0]
+            const body = {playerId: id};
+         const res = await axios.post('http:/127.0.0.1:3000/heal', {
+                headers: {
+                    'authorization': `super haslo`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body),
+    
+            })
+             .then(response => response.json())
+             .then(data => console.log(`Wykonanie komendy **Heal** na graczu o id **${id}** przebiegło **${data.success}**`));
 
     ```
 
