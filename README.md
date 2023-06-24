@@ -81,9 +81,9 @@ function isAuth(req, res, next) {
             }).then((data) => {return data}).catch((error) => {console.log(error)})
     
             console.log(data.data[0])
-    ```
 
-    ```
+
+
 
         const id = args[0]
         const body = {playerId: id};
