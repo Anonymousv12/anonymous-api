@@ -29,7 +29,7 @@ function isAuth(req, res, next) {
 
     ```
     app.get("/getadm", isAuth, (req,res) => {
-        var adm = exports["anon-api"].getadm() /// export z pliku server.lua
+        var adm = exports["anonymous-api"].getadm() /// export z pliku server.lua
         const info = [
             {
                 adm: adm, /// dane które zostaną wysłane 
