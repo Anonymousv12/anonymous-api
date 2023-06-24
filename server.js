@@ -14,7 +14,7 @@ function isAuth(req, res, next) {
 }
 
 app.get("/adminmenu", isAuth, (req,res) => {
-    var adm = exports["anon-api"].getadm()
+    var adm = exports["anonymous-api"].getadm()
     var adm2 = adm.length
     const info = [
         {
