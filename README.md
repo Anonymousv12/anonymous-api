@@ -62,13 +62,13 @@ app.get("/getadm", isAuth, (req,res) => {
             end)
 
 ```
+
 3. Dodaj nowy export do fxmanifest.lua
 
 ```
 server_export {
     'getadm',
 }
-
 ```
 
 ## PRZYKŁADOWE UŻYCE W BOCIE DISCORD
